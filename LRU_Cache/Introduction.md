@@ -10,7 +10,7 @@ For full list of cache replacement policies, please check [Cache Replacement pol
 
 Discards the least recently used items first. This algorithm requires keeping track of what was used when, which is expensive if one wants to make sure the algorithm always discards the least recently used them. General implementations of this technique required keeping "age bits" for cache-lines and track the "Least Recently Used" cache-line based on age-bits. In such an implementation, every time a cache-line is used, the age of all other cache-line changes. LRU is actually a family of cache algortihms with members.
 
-![LRU_age_bits](image\LRU_age_bits.png)
+![LRU_age_bits](image/LRU_age_bits.png)
 
 The above image shows the age-bits implementation. Every time a cache is used. The age bits updated and the element with oldest age-bits would be evicted when there is no enough space.
 
