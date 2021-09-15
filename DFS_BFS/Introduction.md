@@ -10,7 +10,7 @@ Search
 
 Depth-first search (DFS) is an algorithm for traversing or search tree or graph data structures. The algorithm starts at the root node ( selecting some arbitrary nodes as the root node in the case of a graph) and explores as far as possible along each branch before backtracking.
 
-The time and space analysis of DFS differs according to its applications area. In theoretical computer science, DFS is typically used to traverse an entire graph, and takes time O(|V| + |E|)m where |V| is the number of vertices and |E| the number of edges. This is linear in the size of the graph.
+The time and space analysis of DFS differs according to its application area. In theoretical computer science, DFS is typically used to traverse an entire graph, and takes time O(|V| + |E|)m where |V| is the number of vertices and |E| the number of edges. This is linear in the size of the graph.
 
 For applications of DFS in relation to specific domains, such as searching for solutions in artificial intelligence or web-crawling, the graph to be traversed is often either too large to visit in its entirety or infinite (DFS may suffer from non-termination). In such cases, search is only performed to a limited depth.
 
