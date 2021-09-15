@@ -14,6 +14,6 @@ One can also put some additional info in each node such as frequency of a word i
 
 ![trie_imp](image\trie_imp.png)
 
-The above image illustrate how Trie is implemented. Each Node contains an array or a map of children. This is an N-ary tree. It is usually 26 to represents all lower case English character but in our example we have 52 to match the previous example with capital A . And a Node would have a mark to tell if this is a end of a key. In our example, that is the black square at the end. If it is back. then this is the end of a key. Please note that  the end of a key does not have to be the leaf node. Such as the in and inn.  The first n is not the leaf but it is the end of a key. 
+The above image illustrate how Trie is implemented. Each Node contains an array or a map of children. This is an N-ary tree. It is usually 26 to represents all lower case English character but in our example we have 52 to match the previous example with capital A . And a Node would have a mark to tell if this is a end of a key. In our example, that is the black square at the end. If it is back. then this is the end of a key. Please note that  the end of a key does not have to be the leaf node. Such as the in and inn.  The first n is not the leaf, but it is the end of a key. 
 
-Trie is another example of time space trade-off. This reduce searching time with common prefix.
+Trie is another example of time space trade-off. It reduces searching time with common prefix.

@@ -20,11 +20,11 @@ This is a LinkedList implementation. To compare the methods. we keep the age-bit
 
 ### Least Frequently Used (LFU)
 
-Counts how often an item is needed. Those that are used least often are discarded first. This works very similar to LRU except that instead of storing the value of how recently a block was accessed, we store the value of how many times it was accessed. So of course while running an access sequence we will replace a block which was used fewest times from our cache. E.g If A was used (accessed) 5 times and B was used 3 times and others C and d were used 10 times each, we will replace B.
+Counts how often an item is needed. Those that are used least often are discarded first. This works very similar to LRU except that instead of storing the value of how recently a block was accessed, we store the value of how many times it was accessed. So of course while running an access sequence we will replace a block which was used the fewest times from our cache. E.g If A was used (accessed) 5 times and B was used 3 times and others C and d were used 10 times each, we will replace B.
 
 #### Implementation
 
-The simpest method to employ an LFU algorithm is to assign a counter to every block that is loaded into the cache. Each time a reference is made to that block the counter is increased by one. When the cache reaches capacity and has a new block waiting to be inserted the system will search for the block with the lowest counter and remove it from the cache.
+The simplest method to employ an LFU algorithm is to assign a counter to every block that is loaded into the cache. Each time a reference is made to that block the counter is increased by one. When the cache reaches capacity and has a new block waiting to be inserted the system will search for the block with the lowest counter and remove it from the cache.
 
 #### Problems
 
